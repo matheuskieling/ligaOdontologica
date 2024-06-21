@@ -1,0 +1,24 @@
+.headerContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 16px 120px;
+    .logo {
+
+    }
+    .pagesAndButtonContainer {
+        display: flex;
+        align-items: center;
+        gap: 57px;
+        .pages > ul {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 40px;
+
+            li {
+                cursor: pointer;
+            }
+        }
+    }
+}

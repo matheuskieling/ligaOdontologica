@@ -1,0 +1,22 @@
+.topBarColors {
+    width: 100%;
+    height: 8px;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    .greenBar {
+        height: 100%;
+        background-color: var(--logo-green);
+        width: 42%;
+    }
+    .yellowBar {
+        height: 100%;
+        background-color: var(--logo-yellow);
+        width: 32%;
+    }
+    .pinkBar {
+        height: 100%;
+        background-color: var(--logo-pink);
+        width: 26%;
+    }
+}

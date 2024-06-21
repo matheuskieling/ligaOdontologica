@@ -1,0 +1,27 @@
+.hero {
+    width: 100%;
+    height: 741px;
+    background-image: url('../../../assets/imgs/hero-png.png');
+    background-repeat: no-repeat;
+    background-position: 480px; // TODO REMOVE ON IMG CHANGE
+    margin-bottom: -22px;
+    .content {
+        padding: 186px 0 0px 124px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 48px;
+
+        .hero-text {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+    }
+}
+
+.especialidades {
+    width: 100%;
+    height: 653px;
+    background-color: var(--gray-1);
+}

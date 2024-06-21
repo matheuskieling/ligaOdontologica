@@ -1,1 +1,250 @@
-/* You can add global styles to this file, and also import other style files */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	text-decoration: none;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+a, a:visited, a:hover, a:active {
+	color: inherit;
+  }
+blockquote, q {
+	quotes: none;
+}
+
+button {
+	cursor: pointer;
+}
+
+button:hover {
+	opacity: 0.9;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+:root {
+	--dark-green: #27AF27;
+	--light-green: #60D669;
+	--logo-green: #8FCBB2;
+	--logo-yellow: #F3D084;
+	--logo-pink: #E0617F;
+	--blue-5: #015094;
+	--blue-4: #2D64A2;
+	--blue-3: #76A0CF;
+	--blue-2: #C0DCFB;
+	--blue-1: #D3E8FF;
+	--gray-6: #101717;
+	--gray-5: #2F4644;
+	--gray-4: #3F5D5A;
+	--gray-3: #4F7471;
+	--gray-2: #E5E5E5;
+	--gray-1: #F4F7F7;
+}
+
+.color-dark-green {
+	color: var(--dark-green)
+}
+.color-light-green {
+	color: var(--light-green)
+}
+.color-logo-green {
+	color: var(--logo-green)
+}
+.color-logo-pink {
+	color: var(--logo-pink)
+}
+.color-logo-yellow {
+	color: var(--logo-yellow)
+}
+.color-blue-5 {
+	color: var(--blue-5)
+}
+.color-blue-4 {
+	color: var(--blue-4)
+}
+.color-blue-3 {
+	color: var(--blue-3)
+}
+.color-blue-2 {
+	color: var(--blue-2)
+}
+.color-blue-1 {
+	color: var(--blue-1)
+}
+.color-gray-6 {
+	color: var(--gray-6)
+}
+.color-gray-5 {
+	color: var(--gray-5)
+}
+.color-gray-4 {
+	color: var(--gray-4)
+}
+.color-gray-3 {
+	color: var(--gray-3)
+}
+.color-gray-2 {
+	color: var(--gray-2)
+}
+.color-gray-1 {
+	color: var(--gray-1)
+}
+.color-white {
+	color: white;
+}
+
+.h1-desktop {
+	font-family: "Poppins", sans-serif;
+	font-weight: 500;
+	font-size: 48px;
+	line-height: 1.3;
+}
+
+.h1-mobile {
+	font-family: "Poppins", sans-serif;
+	font-weight: 500;
+	font-size: 32px;
+	line-height: 1.3;
+}
+
+.h2-desktop {
+	font-family: "Poppins", sans-serif;
+	font-weight: 500;
+	font-size: 36px;
+	line-height: 1.35;
+}
+
+.h2-mobile {
+	font-family: "Poppins", sans-serif;
+	font-weight: 500;
+	font-size: 28px;
+	line-height: 1.35;
+}
+
+.h3-desktop {
+	font-family: "Poppins", sans-serif;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 1.40;
+}
+
+.h3-mobile {
+	font-family: "Poppins", sans-serif;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 1.40;
+}
+
+.h4 {
+	font-family: "Poppins", sans-serif;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 1.40;
+}
+
+.menu-item {
+	font-family: "Poppins", sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.50;
+}
+
+
+.body-text-16 {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.50;
+}
+
+.body-text-14 {
+	font-family: "Poppins", sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.50;
+}
+
+.button-text {
+	font-family: "Poppins", sans-serif;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 1.50;
+}
+
+.btn-header {
+	background-color: var(--blue-5);
+	border: none;
+	border-radius: 8px;
+	color: white;
+	padding: 8px 16px;
+}
+
+.btn-primary {
+	background-color: var(--blue-5);
+	padding: 8px 28px 8px 32px;
+	color: white;
+	border: none;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	border-radius: 8px;
+}
+
+.btn-secundary {
+	background-color: var(--blue-1);
+	padding: 8px 28px 8px 32px;
+	color: var(--blue-4);
+	border: none;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	border-radius: 8px;
+}
+
+.footer {
+    background-color: var(--blue-5);
+    height: 658px;
+}
+
+
+
+
+
+
+
+
