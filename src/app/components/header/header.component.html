@@ -1,15 +1,15 @@
 <app-color-bar></app-color-bar>
 <div class="headerContainer">
-    <div class="logo">
+    <div (click)="routerNav('')" [style.cursor]="'pointer'" class="logo">
         <img src="../../../assets/imgs/Logo-header.png" alt="Logo da Liga Odontológica">
     </div>
     <div class="pagesAndButtonContainer">
         <div class="pages">
             <ul class="color-gray-3">
-                <li class="menu-item">Equipe</li>
-                <li class="menu-item">Especialidades</li>
-                <li class="menu-item">Consultório</li>
-                <li class="menu-item">Contato</li>
+                <li class="menu-item" (click)="routerNav('equipe')">Equipe</li>
+                <li class="menu-item" (click)="routerNav('especialidades')">Especialidades</li>
+                <li class="menu-item" (click)="routerNav('consultorio')">Consultório</li>
+                <li class="menu-item" (click)="routerNav('contato')">Contato</li>
             </ul>
         </div>
         <button (click)="handleSendWppMessage()" class="btn-header button-text">Agendar Consulta</button>

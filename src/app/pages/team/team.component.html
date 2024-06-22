@@ -1,0 +1,14 @@
+<app-header></app-header>
+<app-whats-app-floating-button id="whats" (toggleOpenEvent)="handleToggleOpen()" [isOpened]="isWhatsOpened"></app-whats-app-floating-button>
+<app-page-title [pageTitle]="'Conheça nossa equipe'" [color]="'green'"></app-page-title>
+<section class="content">
+    <div class="dentista-row">
+        <app-dentista-profile *ngFor="let dentista of dentistasFirstRow" [data]="dentista"></app-dentista-profile>
+    </div>
+    <div class="dentista-row">
+        <app-dentista-profile *ngFor="let dentista of dentistasSecondRow" [data]="dentista"></app-dentista-profile>
+    </div>
+</section>
+
+
+<app-footer></app-footer>

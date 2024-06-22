@@ -10,7 +10,12 @@ import { FooterComponent } from './components/footer/footer.component';
 import { ColorBarComponent } from './components/shared/color-bar/color-bar.component';
 import { EspecialidadeCardComponent } from './components/shared/especialidade-card/especialidade-card.component';
 import { WhatsAppFloatingButtonComponent } from './components/shared/whats-app-floating-button/whats-app-floating-button.component';
-import { MatDividerModule } from '@angular/material/divider'
+import { MatDividerModule } from '@angular/material/divider';
+import { TeamComponent } from './pages/team/team.component';
+import { PageTitleComponent } from './components/shared/page-title/page-title.component';
+import { DentistaProfileComponent } from './components/shared/dentista-profile/dentista-profile.component';
+import { EspecialidadesComponent } from './pages/especialidades/especialidades.component';
+import { ConsultorioComponent } from './pages/consultorio/consultorio.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +26,12 @@ import { MatDividerModule } from '@angular/material/divider'
     FooterComponent,
     ColorBarComponent,
     EspecialidadeCardComponent,
-    WhatsAppFloatingButtonComponent
+    WhatsAppFloatingButtonComponent,
+    TeamComponent,
+    PageTitleComponent,
+    DentistaProfileComponent,
+    EspecialidadesComponent,
+    ConsultorioComponent,
   ],
   imports: [
     BrowserModule,

@@ -289,6 +289,11 @@ table {
     height: 8px;
     background-color: var(--logo-pink);
 }
+.title-bar-blue {
+    width: 90px;
+    height: 8px;
+    background-color: var(--blue-3);
+}
 
 .title-and-buttons-container {
 	display: flex;
@@ -306,3 +311,46 @@ table {
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+img {
+	border-radius: 16px;
+	animation: fadeIn 1s;
+
+}
+
+@keyframes fadeIn {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+  }
+
+* {
+	scroll-behavior: smooth;
+}
+
+.title-and-buttons-container {
+	margin: 0 230px;
+}
+.carousel {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	overflow: hidden;
+
+	.consultorio-image {
+		animation: fadeIn 1s;
+		&.image-left {
+			width: 483px;
+			height: 331px;
+			transform: translateX(-50%);
+		}
+		&.image-center {
+			width: 980px;
+			height: 646px;
+			transform: translateX(0);
+		}
+		&.image-right {
+			width: 483px;
+			height: 331px;
+			transform: translateX(50%);
+		}
+	}
+}

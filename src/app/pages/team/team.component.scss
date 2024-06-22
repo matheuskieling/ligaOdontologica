@@ -1,0 +1,12 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    margin: 120px 300px 240px 300px;
+    gap: 80px;
+    .dentista-row {
+        display: flex;
+
+        justify-content: space-between;
+        align-items: center;
+    }
+}

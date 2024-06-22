@@ -1,0 +1,13 @@
+<div class="denstista-container">
+    <img class="dentista-image" [src]="data.imgSrc" [alt]="data.name">
+    <div class="title-container">
+        <span [class]="'title-bar-' + data.color"></span>
+        <div class="h2-desktop color-gray-6">{{data.name}}</div>
+        <div class="body-text-14 color-gray-5">{{data.cro}}</div>
+    </div>
+    <ul>
+        <li class="body-text-16 color-gray-5" *ngFor="let li of data.descricaoListItems">
+            {{li}}
+        </li>
+    </ul>
+</div>
