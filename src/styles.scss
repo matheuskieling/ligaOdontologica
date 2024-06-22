@@ -262,5 +262,47 @@ table {
     background-color: var(--blue-5);
     height: 658px;
 }
+
+.title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+
+}
+    
+.title-bar-green {
+    width: 90px;
+    height: 8px;
+    background-color: var(--logo-green);
+}
+
+.title-bar-yellow {
+    width: 90px;
+    height: 8px;
+    background-color: var(--logo-yellow);
+}
+
+
+.title-bar-pink {
+    width: 90px;
+    height: 8px;
+    background-color: var(--logo-pink);
+}
+
+.title-and-buttons-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	.arrows-container {
+		display: flex;
+		gap: 10px;
+		img {
+			cursor: pointer;
+		}
+	}
+}
+
+
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
