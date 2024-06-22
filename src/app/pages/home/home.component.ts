@@ -14,11 +14,18 @@ export class HomeComponent implements OnInit {
   visibleEspecialidades: Especialidade[] = [];
   currentStartIndex: number = 0;
   cardsToShow: number = 4; // Static number of cards to show
+  isWhatsOpened = false;
 
   constructor(
     private whatsAppService: WhatsAppService,
     private especialidadeService: EspecialidadeService
-  ) {}
+  ) {
+    window.addEventListener('click', (e: any) => {  
+      if (!document.getElementById('whats')!.contains(e.target)){
+        this.isWhatsOpened = false;
+      }
+    });
+  }
 
   ngOnInit() {
     this.especialidades = this.especialidadeService.getEspecialidades();
@@ -49,4 +56,10 @@ export class HomeComponent implements OnInit {
     let message = "Olá, gostaria de informações sobre agendamento de consulta com a clínica Liga Odontológica"
     this.whatsAppService.openWhatsAppWithMessage(environment.phoneNumber, message)
   }
+
+  handleToggleOpen() {
+    this.isWhatsOpened = !this.isWhatsOpened;
+  }
+
 }
+

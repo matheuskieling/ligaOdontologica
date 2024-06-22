@@ -1,34 +1,53 @@
+<app-whats-app-floating-button (toggleOpenEvent)="handleToggleOpen()" [isOpened]="isWhatsOpened" id="whats"></app-whats-app-floating-button>
 <app-header></app-header>
 <section class="hero">
-    <div class="content">
-        <div class="hero-text">
-            <div class="h1-desktop color-gray-6" [style.maxWidth]="'19ch'">Um sorriso radiante abre portas.</div>
-            <div class="body-text-16 color-gray-5" [style.maxWidth]="'45ch'">Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio</div>
-        </div>
-        <button (click)="handleSendWppMessage()" class="btn-primary button-text">
-            <div>Agendar Consulta</div>
-            <img src="../../../assets/imgs/ic_baseline-whatsapp-white.svg" alt="">
-        </button>
-    </div>
+  <div class="content">
+      <div class="hero-text">
+          <div class="h1-desktop color-gray-6" [style.maxWidth]="'19ch'">Um sorriso radiante abre portas.</div>
+          <div class="body-text-16 color-gray-5" [style.maxWidth]="'45ch'">Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio</div>
+      </div>
+      <button (click)="handleSendWppMessage()" class="btn-primary button-text">
+          <div>Agendar Consulta</div>
+          <img src="../../../assets/imgs/button-whatsapp-icon-white.png" alt="">
+      </button>
+  </div>
 </section>
 <section class="especialidades">
-    <div class="content">
-        <div class="title-and-buttons-container">
-            <div class="title-container">
-              <span class="title-bar"></span>
-              <div class="h2-desktop color-gray-6">Especialidades</div>
-            </div>
-            <div class="arrows-container">
-              <img (click)="previous()" src="../../../assets/imgs/uil_arrow-up.svg" alt="">
-              <img (click)="next()" src="../../../assets/imgs/uil_arrow-up-1.svg" alt="">
-            </div>
+  <div class="content">
+      <div class="title-and-buttons-container">
+          <div class="title-container">
+            <span class="title-bar-green"></span>
+            <div class="h2-desktop color-gray-6">Especialidades</div>
           </div>
-          <div class="especialidades-cards">
-            <app-especialidade-card 
-              *ngFor="let especialidade of visibleEspecialidades" 
-              [especialidade]="especialidade">
-            </app-especialidade-card>
+          <div class="arrows-container">
+            <img (click)="previous()" src="../../../assets/imgs/carrousel-arrow-left.png" alt="">
+            <img (click)="next()" src="../../../assets/imgs/carrousel-arrow-right.png" alt="">
           </div>
+        </div>
+        <div class="especialidades-cards">
+          <app-especialidade-card 
+            *ngFor="let especialidade of visibleEspecialidades" 
+            [especialidade]="especialidade" 
+            [width]="282" 
+            [height]="316">
+          </app-especialidade-card>
+        </div>
+  </div>
+</section>
+
+<section class="equipe">
+  <div class="content">
+    <div class="img"></div>
+    <div class="content-description">
+      <div class="title-container">
+        <span class="title-bar-yellow"></span>
+        <div class="h2-desktop color-gray-6">Equipe</div>
+      </div>
+      <div class="body-text-16 color-gray-4 text">
+        Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio
+      </div>
+      <button class="btn-primary button-text">Conheça a equipe</button>
     </div>
-  </section>
+  </div>
+</section>
 <app-footer></app-footer>

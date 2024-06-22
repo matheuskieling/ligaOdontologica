@@ -9,6 +9,8 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ColorBarComponent } from './components/shared/color-bar/color-bar.component';
 import { EspecialidadeCardComponent } from './components/shared/especialidade-card/especialidade-card.component';
+import { WhatsAppFloatingButtonComponent } from './components/shared/whats-app-floating-button/whats-app-floating-button.component';
+import { MatDividerModule } from '@angular/material/divider'
 
 @NgModule({
   declarations: [
@@ -18,11 +20,13 @@ import { EspecialidadeCardComponent } from './components/shared/especialidade-ca
     HeaderComponent,
     FooterComponent,
     ColorBarComponent,
-    EspecialidadeCardComponent
+    EspecialidadeCardComponent,
+    WhatsAppFloatingButtonComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatDividerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

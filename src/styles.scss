@@ -74,6 +74,7 @@ table {
 	--gray-3: #4F7471;
 	--gray-2: #E5E5E5;
 	--gray-1: #F4F7F7;
+	--placeholder: #D9D9D9;
 }
 
 .color-dark-green {
@@ -206,17 +207,38 @@ table {
 	line-height: 1.50;
 }
 
+.whats-app-title {
+	font-family: "Poppins", sans-serif;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 1.40;
+}
+
+.whats-app-text-14 {
+	font-family: "Poppins", sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.50;
+}
+
+.whats-app-text-12 {
+	font-family: "Poppins", sans-serif;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 1.50;
+}
+
 .btn-header {
 	background-color: var(--blue-5);
 	border: none;
 	border-radius: 8px;
 	color: white;
-	padding: 8px 16px;
+	padding: 9.5px 16px;
 }
 
 .btn-primary {
 	background-color: var(--blue-5);
-	padding: 8px 28px 8px 32px;
+	padding: 16px 28px 16px 32px;
 	color: white;
 	border: none;
 	display: flex;
@@ -240,5 +262,5 @@ table {
     background-color: var(--blue-5);
     height: 658px;
 }
-
-
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
