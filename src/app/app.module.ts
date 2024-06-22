@@ -8,6 +8,7 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ColorBarComponent } from './components/shared/color-bar/color-bar.component';
+import { EspecialidadeCardComponent } from './components/shared/especialidade-card/especialidade-card.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ColorBarComponent } from './components/shared/color-bar/color-bar.compo
     ContactComponent,
     HeaderComponent,
     FooterComponent,
-    ColorBarComponent
+    ColorBarComponent,
+    EspecialidadeCardComponent
   ],
   imports: [
     BrowserModule,

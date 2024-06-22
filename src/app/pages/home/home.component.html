@@ -12,6 +12,23 @@
     </div>
 </section>
 <section class="especialidades">
-    
-</section>
+    <div class="content">
+        <div class="title-and-buttons-container">
+            <div class="title-container">
+              <span class="title-bar"></span>
+              <div class="h2-desktop color-gray-6">Especialidades</div>
+            </div>
+            <div class="arrows-container">
+              <img (click)="previous()" src="../../../assets/imgs/uil_arrow-up.svg" alt="">
+              <img (click)="next()" src="../../../assets/imgs/uil_arrow-up-1.svg" alt="">
+            </div>
+          </div>
+          <div class="especialidades-cards">
+            <app-especialidade-card 
+              *ngFor="let especialidade of visibleEspecialidades" 
+              [especialidade]="especialidade">
+            </app-especialidade-card>
+          </div>
+    </div>
+  </section>
 <app-footer></app-footer>
