@@ -8,6 +8,7 @@ import { Component, Input } from '@angular/core';
 export class PageTitleComponent {
   @Input() pageTitle!: string;
   @Input() color!: string;
+  @Input() isMobile!: boolean;
   
   constructor() {}
 }

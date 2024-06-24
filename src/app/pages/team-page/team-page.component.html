@@ -1,15 +1,9 @@
 <app-header [isMobile]="isMobile"></app-header>
 <app-whats-app-floating-button id="whats" [isMobile]="isMobile" (toggleOpenEvent)="handleToggleOpen()" [isOpened]="isWhatsOpened" id="whats"></app-whats-app-floating-button>
 
-<app-page-title [pageTitle]="'Conheça nossa equipe'" [color]="'green'"></app-page-title>
-<section class="content">
-    <div class="dentista-row">
-        <app-dentista-profile *ngFor="let dentista of dentistasFirstRow" [data]="dentista"></app-dentista-profile>
-    </div>
-    <div class="dentista-row">
-        <app-dentista-profile *ngFor="let dentista of dentistasSecondRow" [data]="dentista"></app-dentista-profile>
-    </div>
-</section>
+<app-page-title [isMobile]="isMobile" [pageTitle]="'Conheça nossa equipe'" [color]="'green'"></app-page-title>
+<app-team-page-desktop *ngIf="!isMobile" [dentistasFirstRow]="dentistasFirstRow" [dentistasSecondRow]="dentistasSecondRow"></app-team-page-desktop>
+<app-team-page-mobile *ngIf="isMobile" [dentistasFirstRow]="dentistasFirstRow" [dentistasSecondRow]="dentistasSecondRow"></app-team-page-mobile>
 
 
-<app-footer></app-footer>
+<app-footer [isMobile]="isMobile"></app-footer>

@@ -1,0 +1,14 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    margin: 80px 16px 120px 16px;
+    gap: 64px;
+    .dentista-row {
+        display: flex;
+        flex-direction: column;
+        // justify-content: space-between;
+        align-items: center;
+    }
+
+}

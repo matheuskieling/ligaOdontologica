@@ -1,6 +1,2 @@
-<div class="header-title">
-    <div class="title-container">
-        <span [class]="'title-bar-' + color"></span>
-        <h1 class="color-gray-6">{{pageTitle}}</h1>
-      </div>
-</div>
+<app-page-title-desktop *ngIf="!isMobile" [pageTitle]="pageTitle" [color]="color"></app-page-title-desktop>
+<app-page-title-mobile *ngIf="isMobile" [pageTitle]="pageTitle" [color]="color"></app-page-title-mobile>

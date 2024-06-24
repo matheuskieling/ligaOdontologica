@@ -1,0 +1,45 @@
+<section class="consultorio">
+  <div class="content">
+    <div class="title-and-buttons-container">
+      <div class="title-container">
+        <span class="title-bar-yellow"></span>
+        <h2 class="color-gray-6">Boas-vindas à <br>Liga Odontológica Integrada</h2>
+        <div class="body-text-16 color-gray-5" [style.max-width]="'646px'">Estamos localizadas no bairro Floresta, próximo ao Moinhos Shopping. Com um perfil acolhedor, cuidamos do seu sorriso e do sorriso dos seus filhos. Nossa equipe é composta por profissionais muito qualificados e interessados em lhe proporcionar a melhor experiência. </div>
+      </div>
+      <div class="arrows-container">
+        <img
+          (click)="previousConsultorio()"
+          src="../../../assets/imgs/carrousel-arrow-left.png"
+          alt=""
+        />
+        <img
+          (click)="nextConsultorio()"
+          src="../../../assets/imgs/carrousel-arrow-right.png"
+          alt=""
+        />
+      </div>
+    </div>
+    <div class="carousel">
+      <ng-container *ngFor="let foto of visibleFotosConsultorio; let i = index">
+        <img
+          [ngClass]="getConsultorioImageClass(i)"
+          [src]="foto.src"
+          [alt]="foto.alt"
+          class="consultorio-image"
+        />
+      </ng-container>
+    </div>
+  </div>
+  <div class="content-2">
+    <div class="text">
+      <div class="title-container">
+        <span class="title-bar-pink"></span>
+        <h2 class="color-gray-6">Nossa história</h2>
+      </div>
+      <div class="body-text-16 color-gray-5" [style.max-width]="'400px'">
+        Olá, muito prazer, somos a Manuela e Mariana, especialistas em Ortodontia.<br><br>A ideia de trabalharmos juntas surgiu desde a época da Especialização, onde nos tornamos amigas, e atualmente sócias. Tivemos a oportunidade de assumir a Liga Odontológica Integrada, a qual foi fundada por uma profissional que muito admiramos.<br><br>No decorrer deste processo, agregamos à Equipe as dentistas Bianca e Isadora, englobando as Especialidades de Cirurgia e Odontopediatria, respectivamente.<br><br>Nossa missão é proporcionar um ambiente aconchegante para realizar um atendimento qualificado.<br><br>Venha nos conhecer, será um prazer recebê-los!
+      </div>
+    </div>
+    <img class="image" src="../../../assets/imgs/consultorio/Rectangle-12.png" alt="">
+  </div>
+</section>

@@ -1,0 +1,18 @@
+.denstista-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+    height: 749px;
+
+    .dentista-image {
+        width: 100%;
+        height: 523px;
+        object-fit: cover;
+    }
+
+    li {
+        margin-left: 20px;
+        list-style-type: disc;
+    }
+}

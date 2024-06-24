@@ -37,6 +37,14 @@ import { FooterDesktopComponent } from './components/footer/footer-desktop/foote
 import { FooterMobileComponent } from './components/footer/footer-mobile/footer-mobile.component';
 import { EspecialidadeCardDesktopComponent } from './components/shared/especialidade-card/especialidade-card-desktop/especialidade-card-desktop.component';
 import { EspecialidadeCardMobileComponent } from './components/shared/especialidade-card/especialidade-card-mobile/especialidade-card-mobile.component';
+import { ConsultorioPageDesktopComponent } from './pages/consultorio-page/consultorio-page-desktop/consultorio-page-desktop.component';
+import { ConsultorioPageMobileComponent } from './pages/consultorio-page/consultorio-page-mobile/consultorio-page-mobile.component';
+import { PageTitleDesktopComponent } from './components/shared/page-title/page-title-desktop/page-title-desktop.component';
+import { PageTitleMobileComponent } from './components/shared/page-title/page-title-mobile/page-title-mobile.component';
+import { TeamPageDesktopComponent } from './pages/team-page/team-page-desktop/team-page-desktop.component';
+import { TeamPageMobileComponent } from './pages/team-page/team-page-mobile/team-page-mobile.component';
+import { DentistaProfileDesktopComponent } from './components/shared/dentista-profile/dentista-profile-desktop/dentista-profile-desktop.component';
+import { DentistaProfileMobileComponent } from './components/shared/dentista-profile/dentista-profile-mobile/dentista-profile-mobile.component';
 
 @NgModule({
   declarations: [
@@ -74,6 +82,14 @@ import { EspecialidadeCardMobileComponent } from './components/shared/especialid
     FooterMobileComponent,
     EspecialidadeCardDesktopComponent,
     EspecialidadeCardMobileComponent,
+    ConsultorioPageDesktopComponent,
+    ConsultorioPageMobileComponent,
+    PageTitleDesktopComponent,
+    PageTitleMobileComponent,
+    TeamPageDesktopComponent,
+    TeamPageMobileComponent,
+    DentistaProfileDesktopComponent,
+    DentistaProfileMobileComponent,
   ],
   imports: [
     BrowserModule,

@@ -8,4 +8,5 @@ import { Dentista } from 'src/app/shared/interfaces/dentista-interface';
 })
 export class DentistaProfileComponent {
   @Input() data!: Dentista;
+  @Input() isMobile!: boolean;
 }
