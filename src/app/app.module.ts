@@ -30,6 +30,9 @@ import { EquipeMobileComponent } from './components/equipe/equipe-mobile/equipe-
 import { ConsultorioComponent } from './components/consultorio/consultorio.component';
 import { ConsultorioDesktopComponent } from './components/consultorio/consultorio-desktop/consultorio-desktop.component';
 import { ConsultorioMobileComponent } from './components/consultorio/consultorio-mobile/consultorio-mobile.component';
+import { ContatosComponent } from './components/contatos/contatos.component';
+import { ContatosDesktopComponent } from './components/contatos/contatos-desktop/contatos-desktop.component';
+import { ContatosMobileComponent } from './components/contatos/contatos-mobile/contatos-mobile.component';
 
 @NgModule({
   declarations: [
@@ -60,6 +63,9 @@ import { ConsultorioMobileComponent } from './components/consultorio/consultorio
     ConsultorioComponent,
     ConsultorioDesktopComponent,
     ConsultorioMobileComponent,
+    ContatosComponent,
+    ContatosDesktopComponent,
+    ContatosMobileComponent,
   ],
   imports: [
     BrowserModule,
