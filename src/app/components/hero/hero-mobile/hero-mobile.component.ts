@@ -10,6 +10,7 @@ export class HeroMobileComponent {
 
 
   handleSendWppMessage() {
+    console.log('emitfromheromobile')
     this.clickWhatsApp.emit();
   }
 }

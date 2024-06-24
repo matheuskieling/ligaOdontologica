@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-equipe-mobile',
@@ -6,5 +7,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./equipe-mobile.component.scss']
 })
 export class EquipeMobileComponent {
+  constructor(
+    private router: Router
+  ) {}
 
+
+  routerNav(page: string) {
+    this.router.navigate([page])
+  }
 }
