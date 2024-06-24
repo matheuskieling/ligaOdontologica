@@ -1,17 +1,17 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
-import { ContactComponent } from './pages/contact/contact.component';
-import { TeamComponent } from './pages/team/team.component';
+import { ContactPageComponent } from './pages/contact-page/contact-page.component';
+import { TeamPageComponent } from './pages/team-page/team-page.component';
 import { EspecialidadesPageComponent } from './pages/especialidades-page/especialidades-page.component';
-import { ConsultorioComponent } from './pages/consultorio/consultorio.component';
+import { ConsultorioPageComponent } from './pages/consultorio-page/consultorio-page.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'contato', component: ContactComponent },
-  { path: 'equipe', component: TeamComponent },
+  { path: 'contato', component: ContactPageComponent },
+  { path: 'equipe', component: TeamPageComponent },
   { path: 'especialidades', component: EspecialidadesPageComponent },
-  { path: 'consultorio', component: ConsultorioComponent },
+  { path: 'consultorio', component: ConsultorioPageComponent },
 ];
 
 @NgModule({

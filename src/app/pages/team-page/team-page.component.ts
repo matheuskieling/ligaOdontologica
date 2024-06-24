@@ -1,13 +1,16 @@
 import { Component } from '@angular/core';
 import { Dentista } from 'src/app/shared/interfaces/dentista-interface';
+import { ResponsiveService } from 'src/app/shared/services/responsive.service';
 
 @Component({
-  selector: 'app-team',
-  templateUrl: './team.component.html',
-  styleUrls: ['./team.component.scss']
+  selector: 'app-team-page',
+  templateUrl: './team-page.component.html',
+  styleUrls: ['./team-page.component.scss']
 })
-export class TeamComponent {
+export class TeamPageComponent {
   isWhatsOpened = false;
+  isMobile: boolean = true;
+
 
   dentistasFirstRow: Dentista[] = [
     {
@@ -60,11 +63,21 @@ export class TeamComponent {
     }
   ];
 
-  constructor() {
+  
+  constructor(
+    private responsiveService: ResponsiveService
+  ) {
     window.addEventListener('click', (e: any) => {  
       if (!document.getElementById('whats')!.contains(e.target)){
         this.isWhatsOpened = false;
       }
+    });
+  }
+
+  ngOnInit() {
+    this.responsiveService.screenType$.subscribe(screenType => {
+      this.isMobile = screenType == 'mobile'
+      console.log(`Current screen type: ${screenType}`);
     });
   }
 

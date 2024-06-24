@@ -1,19 +1,22 @@
 import { Component } from '@angular/core';
 import { FotoConsultorio } from 'src/app/shared/interfaces/photo-interface';
 import { ImageService } from 'src/app/shared/services/images.service';
+import { ResponsiveService } from 'src/app/shared/services/responsive.service';
 
 @Component({
-  selector: 'app-consultorio',
-  templateUrl: './consultorio.component.html',
-  styleUrls: ['./consultorio.component.scss']
+  selector: 'app-consultorio-page',
+  templateUrl: './consultorio-page.component.html',
+  styleUrls: ['./consultorio-page.component.scss']
 })
-export class ConsultorioComponent {
+export class ConsultorioPageComponent {
   isWhatsOpened = false;
+  isMobile: boolean = true;
   fotosConsultorio: FotoConsultorio[] = [];
   visibleFotosConsultorio: FotoConsultorio[] = [];
   consultorioStartIndex: number = 0;
   constructor(
-    private imageService: ImageService
+    private imageService: ImageService,
+    private responsiveService: ResponsiveService
   ) {
     window.addEventListener('click', (e: any) => {  
       if (!document.getElementById('whats')!.contains(e.target)){
@@ -25,6 +28,10 @@ export class ConsultorioComponent {
   ngOnInit() {
     this.fotosConsultorio = this.imageService.getFotosConsultorio();
     this.updateVisibleFotosConsultorio();
+    this.responsiveService.screenType$.subscribe(screenType => {
+      this.isMobile = screenType == 'mobile'
+      console.log(`Current screen type: ${screenType}`);
+    });
   }
 
   handleToggleOpen() {

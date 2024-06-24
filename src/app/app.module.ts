@@ -4,18 +4,18 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
-import { ContactComponent } from './pages/contact/contact.component';
+import { ContactPageComponent } from './pages/contact-page/contact-page.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ColorBarComponent } from './components/shared/color-bar/color-bar.component';
 import { EspecialidadeCardComponent } from './components/shared/especialidade-card/especialidade-card.component';
 import { WhatsAppFloatingButtonComponent } from './components/shared/whats-app-floating-button/whats-app-floating-button.component';
 import { MatDividerModule } from '@angular/material/divider';
-import { TeamComponent } from './pages/team/team.component';
+import { TeamPageComponent } from './pages/team-page/team-page.component';
 import { PageTitleComponent } from './components/shared/page-title/page-title.component';
 import { DentistaProfileComponent } from './components/shared/dentista-profile/dentista-profile.component';
 import { EspecialidadesPageComponent } from './pages/especialidades-page/especialidades-page.component';
-import { ConsultorioComponent } from './pages/consultorio/consultorio.component';
+import { ConsultorioPageComponent } from './pages/consultorio-page/consultorio-page.component';
 import { HeaderDesktopComponent } from './components/header/header-desktop/header-desktop.component';
 import { HeaderMobileComponent } from './components/header/header-mobile/header-mobile.component';
 import { HeroComponent } from './components/hero/hero.component';
@@ -29,17 +29,17 @@ import { EspecialidadesComponent } from './components/especialidades/especialida
   declarations: [
     AppComponent,
     HomeComponent,
-    ContactComponent,
+    ContactPageComponent,
     HeaderComponent,
     FooterComponent,
     ColorBarComponent,
     EspecialidadeCardComponent,
     WhatsAppFloatingButtonComponent,
-    TeamComponent,
+    TeamPageComponent,
     PageTitleComponent,
     DentistaProfileComponent,
     EspecialidadesPageComponent,
-    ConsultorioComponent,
+    ConsultorioPageComponent,
     HeaderDesktopComponent,
     HeaderMobileComponent,
     HeroComponent,

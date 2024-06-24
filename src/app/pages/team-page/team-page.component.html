@@ -1,5 +1,6 @@
 <app-header></app-header>
-<app-whats-app-floating-button id="whats" (toggleOpenEvent)="handleToggleOpen()" [isOpened]="isWhatsOpened"></app-whats-app-floating-button>
+<app-whats-app-floating-button id="whats" [isMobile]="isMobile" (toggleOpenEvent)="handleToggleOpen()" [isOpened]="isWhatsOpened" id="whats"></app-whats-app-floating-button>
+
 <app-page-title [pageTitle]="'Conheça nossa equipe'" [color]="'green'"></app-page-title>
 <section class="content">
     <div class="dentista-row">
