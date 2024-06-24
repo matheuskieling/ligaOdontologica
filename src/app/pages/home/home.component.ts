@@ -15,13 +15,9 @@ import { environment } from 'src/environments/environment';
 export class HomeComponent implements OnInit {
   cardsToShow: number = 4; // Static number of cards to show
   isWhatsOpened = false;
-  fotosConsultorio: FotoConsultorio[] = [];
-  visibleFotosConsultorio: FotoConsultorio[] = [];
-  consultorioStartIndex: number = 0;
   isMobile: boolean = true;
   constructor(
     private whatsAppService: WhatsAppService,
-    private imageService: ImageService,
     private responsiveService: ResponsiveService
   ) {
     window.addEventListener('click', (e: any) => {  
@@ -32,52 +28,12 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.fotosConsultorio = this.imageService.getFotosConsultorio();
-    this.updateVisibleFotosConsultorio();
-
     this.responsiveService.screenType$.subscribe(screenType => {
       this.isMobile = screenType == 'mobile'
       console.log(`Current screen type: ${screenType}`);
     });
   }
 
-  updateVisibleFotosConsultorio() {
-    const tempArray: FotoConsultorio[] = [];
-    for (let i = 0; i < 3; i++) { // Display 3 photos at a time
-      tempArray.push(
-        this.fotosConsultorio[(this.consultorioStartIndex + i) % this.fotosConsultorio.length]
-      );
-    }
-    
-    this.visibleFotosConsultorio = [];
-    
-    setTimeout(() => {
-      this.visibleFotosConsultorio = tempArray;
-    }, 0);
-  }
-  
-  nextConsultorio() {
-    this.consultorioStartIndex = (this.consultorioStartIndex + 1) % this.fotosConsultorio.length;
-    this.updateVisibleFotosConsultorio();
-  }
-  
-  previousConsultorio() {
-    this.consultorioStartIndex =
-      (this.consultorioStartIndex - 1 + this.fotosConsultorio.length) % this.fotosConsultorio.length;
-    this.updateVisibleFotosConsultorio();
-  }
-  
-
-  getConsultorioImageClass(index: number): string {
-    if (index === 0) {
-      return 'image-left';
-    } else if (index === 1) {
-      return 'image-center';
-    } else if (index === 2) {
-      return 'image-right';
-    }
-    return '';
-  }
 
   handleSendWppMessage() {
     let message = "Olá, gostaria de informações sobre agendamento de consulta com a clínica Liga Odontológica"

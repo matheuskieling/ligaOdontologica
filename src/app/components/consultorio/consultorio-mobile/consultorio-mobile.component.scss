@@ -1,0 +1,29 @@
+.consultorio {
+    width: 100%;
+    height: fit-content;
+    background-color: white;
+
+    .content {
+        padding: 40px 16px 80px 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 56px;
+    }
+}
+
+.arrows-container {
+    align-self: flex-end;
+    display: flex;
+    gap: 10px;
+}
+
+img {
+    width: 100% !important;
+    height: 60% !important;
+}
+
+.carousel-and-arrows-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}

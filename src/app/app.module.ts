@@ -27,6 +27,9 @@ import { EspecialidadesComponent } from './components/especialidades/especialida
 import { EquipeComponent } from './components/equipe/equipe.component';
 import { EquipeDesktopComponent } from './components/equipe/equipe-desktop/equipe-desktop.component';
 import { EquipeMobileComponent } from './components/equipe/equipe-mobile/equipe-mobile.component';
+import { ConsultorioComponent } from './components/consultorio/consultorio.component';
+import { ConsultorioDesktopComponent } from './components/consultorio/consultorio-desktop/consultorio-desktop.component';
+import { ConsultorioMobileComponent } from './components/consultorio/consultorio-mobile/consultorio-mobile.component';
 
 @NgModule({
   declarations: [
@@ -54,6 +57,9 @@ import { EquipeMobileComponent } from './components/equipe/equipe-mobile/equipe-
     EquipeComponent,
     EquipeDesktopComponent,
     EquipeMobileComponent,
+    ConsultorioComponent,
+    ConsultorioDesktopComponent,
+    ConsultorioMobileComponent,
   ],
   imports: [
     BrowserModule,

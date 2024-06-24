@@ -1,0 +1,19 @@
+<section class="consultorio">
+    <div class="content">
+      <div class="title-and-buttons-container">
+        <div class="title-container">
+          <span class="title-bar-green"></span>
+          <h2 class=" color-gray-6">Consultório</h2>
+        </div>
+        <div class="arrows-container">
+          <img (click)="previousConsultorio()" src="../../../assets/imgs/carrousel-arrow-left.png" alt="">
+          <img (click)="nextConsultorio()" src="../../../assets/imgs/carrousel-arrow-right.png" alt="">
+        </div>
+      </div>
+      <div class="carousel">
+        <ng-container *ngFor="let foto of visibleFotosConsultorio; let i = index">
+          <img [ngClass]="getConsultorioImageClass(i)" [src]="foto.src" [alt]="foto.alt" class="consultorio-image">
+        </ng-container>
+      </div>
+    </div>
+  </section>
