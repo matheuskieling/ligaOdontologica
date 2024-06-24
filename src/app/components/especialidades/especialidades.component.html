@@ -1,0 +1,2 @@
+<app-especialidades-desktop (nextEmitter)="next()" (previousEmitter)="previous()" (navClick)="routerNav()" *ngIf="!isMobile" [visibleEspecialidades]="visibleEspecialidades"></app-especialidades-desktop>
+<app-especialidades-mobile (nextEmitter)="next()" (previousEmitter)="previous()" (navClick)="routerNav()" *ngIf="isMobile" [visibleEspecialidades]="visibleEspecialidades"></app-especialidades-mobile>

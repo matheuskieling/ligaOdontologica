@@ -1,4 +1,4 @@
-<div *ngIf="isOpened" class="dialog-container">
+<div *ngIf="isOpened" [style.right]="isMobile ? '24px' : '120px'" class="dialog-container">
     <div class="dialog-header">
         <div class="whats-app-title color-white">Fale conosco pelo Whatsapp</div>
         <mat-divider class="mat-divider"></mat-divider>
@@ -39,6 +39,6 @@
     <span class="arrow-down"></span>
 </div>
 
-<div class="whats-app-floating-button-container" (click)="toggleOpen()">
+<div class="whats-app-floating-button-container" [style.right]="isMobile ? '24px' : '120px'" (click)="toggleOpen()">
     <img src="../../../assets/imgs/whatsapp-logo-floating-button.png" alt="whatsApp">
 </div>

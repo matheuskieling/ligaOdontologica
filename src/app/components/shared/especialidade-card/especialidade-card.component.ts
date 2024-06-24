@@ -10,4 +10,5 @@ export class EspecialidadeCardComponent {
   @Input() width!: number;
   @Input() height!: number;
   @Input() especialidade!: Especialidade;
+  @Input() showDescription: boolean = true;
 }

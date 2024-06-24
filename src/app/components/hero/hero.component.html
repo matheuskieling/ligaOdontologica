@@ -1,0 +1,2 @@
+<app-hero-desktop (whatsAppClick)="handleSendWppMessage()" *ngIf="!isMobile"></app-hero-desktop>
+<app-hero-mobile (whatsAppClick)="handleSendWppMessage()" *ngIf="isMobile"></app-hero-mobile>

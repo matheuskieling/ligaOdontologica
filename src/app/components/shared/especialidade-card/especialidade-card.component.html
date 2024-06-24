@@ -1,5 +1,5 @@
 <div class="cardContainer">
     <img [src]="especialidade.relatedIconPath" [alt]="especialidade.name">
-    <div class="h4 color-gray-6 text">{{especialidade.name}}</div>
-    <div class="body-text-16 color-gray-4 text">{{especialidade.description}}</div>
+    <h4 class="color-gray-6 text">{{especialidade.name}}</h4>
+    <div *ngIf="showDescription" class="body-text-16 color-gray-4 text">{{especialidade.description}}</div>
 </div>

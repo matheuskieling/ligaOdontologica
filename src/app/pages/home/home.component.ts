@@ -3,6 +3,7 @@ import { Especialidade } from 'src/app/shared/interfaces/especialidade-interface
 import { FotoConsultorio } from 'src/app/shared/interfaces/photo-interface';
 import { EspecialidadeService } from 'src/app/shared/services/especialidade.service';
 import { ImageService } from 'src/app/shared/services/images.service';
+import { ResponsiveService } from 'src/app/shared/services/responsive.service';
 import { WhatsAppService } from 'src/app/shared/services/whats-app.service';
 import { environment } from 'src/environments/environment';
 
@@ -12,19 +13,16 @@ import { environment } from 'src/environments/environment';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  especialidadeList: Especialidade[] = [];
-  visibleEspecialidades: Especialidade[] = [];
-  currentStartIndex: number = 0;
   cardsToShow: number = 4; // Static number of cards to show
   isWhatsOpened = false;
   fotosConsultorio: FotoConsultorio[] = [];
   visibleFotosConsultorio: FotoConsultorio[] = [];
   consultorioStartIndex: number = 0;
-
+  isMobile: boolean = true;
   constructor(
     private whatsAppService: WhatsAppService,
-    private especialidadeService: EspecialidadeService,
-    private imageService: ImageService
+    private imageService: ImageService,
+    private responsiveService: ResponsiveService
   ) {
     window.addEventListener('click', (e: any) => {  
       if (!document.getElementById('whats')!.contains(e.target)){
@@ -34,30 +32,13 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.especialidadeList = this.especialidadeService.getEspecialidades();
-    this.updateVisibleEspecialidades();
     this.fotosConsultorio = this.imageService.getFotosConsultorio();
     this.updateVisibleFotosConsultorio();
-  }
 
-  updateVisibleEspecialidades() {
-    this.visibleEspecialidades = [];
-    for (let i = 0; i < this.cardsToShow; i++) {
-      this.visibleEspecialidades.push(
-        this.especialidadeList[(this.currentStartIndex + i) % this.especialidadeList.length]
-      );
-    }
-  }
-
-  next() {
-    this.currentStartIndex = (this.currentStartIndex + this.cardsToShow) % this.especialidadeList.length;
-    this.updateVisibleEspecialidades();
-  }
-
-  previous() {
-    this.currentStartIndex =
-      (this.currentStartIndex - this.cardsToShow + this.especialidadeList.length) % this.especialidadeList.length;
-    this.updateVisibleEspecialidades();
+    this.responsiveService.screenType$.subscribe(screenType => {
+      this.isMobile = screenType == 'mobile'
+      console.log(`Current screen type: ${screenType}`);
+    });
   }
 
   updateVisibleFotosConsultorio() {

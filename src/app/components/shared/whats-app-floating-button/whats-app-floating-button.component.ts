@@ -14,7 +14,7 @@ export class WhatsAppFloatingButtonComponent {
   ) {
 
   }
-
+  @Input() isMobile!: boolean;
   @Input() isOpened = false;
   @Output() toggleOpenEvent: EventEmitter<any> = new EventEmitter();
 

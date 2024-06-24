@@ -3,11 +3,11 @@ import { Especialidade } from 'src/app/shared/interfaces/especialidade-interface
 import { EspecialidadeService } from 'src/app/shared/services/especialidade.service';
 
 @Component({
-  selector: 'app-especialidades',
-  templateUrl: './especialidades.component.html',
-  styleUrls: ['./especialidades.component.scss']
+  selector: 'app-especialidades-page',
+  templateUrl: './especialidades-page.component.html',
+  styleUrls: ['./especialidades-page.component.scss']
 })
-export class EspecialidadesComponent {
+export class EspecialidadesPageComponent {
   isWhatsOpened = false;
   dividedEspecialidades: Especialidade[][] = []
   constructor(

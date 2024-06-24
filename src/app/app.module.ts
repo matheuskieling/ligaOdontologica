@@ -14,8 +14,16 @@ import { MatDividerModule } from '@angular/material/divider';
 import { TeamComponent } from './pages/team/team.component';
 import { PageTitleComponent } from './components/shared/page-title/page-title.component';
 import { DentistaProfileComponent } from './components/shared/dentista-profile/dentista-profile.component';
-import { EspecialidadesComponent } from './pages/especialidades/especialidades.component';
+import { EspecialidadesPageComponent } from './pages/especialidades-page/especialidades-page.component';
 import { ConsultorioComponent } from './pages/consultorio/consultorio.component';
+import { HeaderDesktopComponent } from './components/header/header-desktop/header-desktop.component';
+import { HeaderMobileComponent } from './components/header/header-mobile/header-mobile.component';
+import { HeroComponent } from './components/hero/hero.component';
+import { HeroDesktopComponent } from './components/hero/hero-desktop/hero-desktop.component';
+import { HeroMobileComponent } from './components/hero/hero-mobile/hero-mobile.component';
+import { EspecialidadesDesktopComponent } from './components/especialidades/especialidades-desktop/especialidades-desktop.component';
+import { EspecialidadesMobileComponent } from './components/especialidades/especialidades-mobile/especialidades-mobile.component';
+import { EspecialidadesComponent } from './components/especialidades/especialidades.component';
 
 @NgModule({
   declarations: [
@@ -30,8 +38,16 @@ import { ConsultorioComponent } from './pages/consultorio/consultorio.component'
     TeamComponent,
     PageTitleComponent,
     DentistaProfileComponent,
-    EspecialidadesComponent,
+    EspecialidadesPageComponent,
     ConsultorioComponent,
+    HeaderDesktopComponent,
+    HeaderMobileComponent,
+    HeroComponent,
+    HeroDesktopComponent,
+    HeroMobileComponent,
+    EspecialidadesComponent,
+    EspecialidadesDesktopComponent,
+    EspecialidadesMobileComponent,
   ],
   imports: [
     BrowserModule,

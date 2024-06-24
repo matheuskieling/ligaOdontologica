@@ -1,0 +1,35 @@
+<section class="especialidades">
+  <div class="content">
+    <div class="title-and-buttons-container">
+      <div class="title-container">
+        <span class="title-bar-green"></span>
+        <h2 class="color-gray-6">Especialidades</h2>
+      </div>
+      <div class="arrows-container">
+        <img
+          (click)="previous()"
+          src="../../../assets/imgs/carrousel-arrow-left.png"
+          alt=""
+        />
+        <img
+          (click)="next()"
+          src="../../../assets/imgs/carrousel-arrow-right.png"
+          alt=""
+        />
+      </div>
+    </div>
+    <div class="especialidades-cards">
+      <app-especialidade-card
+        *ngFor="let especialidade of visibleEspecialidades"
+        [especialidade]="especialidade"
+        [width]="282"
+        [height]="316"
+        [showDescription]="false"
+      >
+      </app-especialidade-card>
+    </div>
+    <button (click)="routerNav()" class="btn-primary button-text btn">
+      Ver Especialidades
+    </button>
+  </div>
+</section>

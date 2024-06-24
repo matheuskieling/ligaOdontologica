@@ -1,47 +1,14 @@
-<app-whats-app-floating-button (toggleOpenEvent)="handleToggleOpen()" [isOpened]="isWhatsOpened" id="whats"></app-whats-app-floating-button>
-<app-header></app-header>
-<section class="hero">
-  <div class="content">
-      <div class="hero-text">
-          <div class="h1-desktop color-gray-6" [style.maxWidth]="'19ch'">Um sorriso radiante abre portas.</div>
-          <div class="body-text-16 color-gray-5" [style.maxWidth]="'45ch'">Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio</div>
-      </div>
-      <button (click)="handleSendWppMessage()" class="btn-primary button-text">
-          <div>Agendar Consulta</div>
-          <img src="../../../assets/imgs/button-whatsapp-icon-white.png" alt="">
-      </button>
-  </div>
-</section>
-<section class="especialidades">
-  <div class="content">
-      <div class="title-and-buttons-container">
-          <div class="title-container">
-            <span class="title-bar-green"></span>
-            <div class="h2-desktop color-gray-6">Especialidades</div>
-          </div>
-          <div class="arrows-container">
-            <img (click)="previous()" src="../../../assets/imgs/carrousel-arrow-left.png" alt="">
-            <img (click)="next()" src="../../../assets/imgs/carrousel-arrow-right.png" alt="">
-          </div>
-        </div>
-        <div class="especialidades-cards">
-          <app-especialidade-card 
-            *ngFor="let especialidade of visibleEspecialidades" 
-            [especialidade]="especialidade" 
-            [width]="282" 
-            [height]="316">
-          </app-especialidade-card>
-        </div>
-  </div>
-</section>
-
+<app-whats-app-floating-button [isMobile]="isMobile" (toggleOpenEvent)="handleToggleOpen()" [isOpened]="isWhatsOpened" id="whats"></app-whats-app-floating-button>
+<app-header [isMobile]="isMobile"></app-header>
+<app-hero [isMobile]="isMobile"></app-hero>
+<app-especialidades [isMobile]="isMobile"></app-especialidades>
 <section class="equipe">
   <div class="content">
     <img src="../../../assets/imgs/team.jpg" alt="">
     <div class="content-description">
       <div class="title-container">
         <span class="title-bar-yellow"></span>
-        <div class="h2-desktop color-gray-6">Equipe</div>
+        <h2 class=" color-gray-6">Equipe</h2>
       </div>
       <div class="body-text-16 color-gray-4 text">
         Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio
@@ -56,7 +23,7 @@
     <div class="title-and-buttons-container">
       <div class="title-container">
         <span class="title-bar-green"></span>
-        <div class="h2-desktop color-gray-6">Consultório</div>
+        <h2 class=" color-gray-6">Consultório</h2>
       </div>
       <div class="arrows-container">
         <img (click)="previousConsultorio()" src="../../../assets/imgs/carrousel-arrow-left.png" alt="">
@@ -77,21 +44,21 @@
     <div class="content-description">
       <div class="title-container">
         <span class="title-bar-green"></span>
-        <div class="h2-desktop color-gray-6">Contatos</div>
+        <h2 class=" color-gray-6">Contatos</h2>
       </div>
       <div class="information-container">
         <div class="information-column">
           <div class="information-item">
             <div class="title">
               <img src="../../../assets/imgs/contact-address.png" alt="Endereço">
-              <div class="h3-desktop color-gray-6">Endereço</div>
+              <h3 class="color-gray-6">Endereço</h3>
             </div>
             <div class="body-text-16 color-gray-4">R. Félix da Cunha, 737<br>Floresta, Porto Alegre/RS</div>
           </div>
           <div class="information-item">
             <div class="title">
               <img src="../../../assets/imgs/contact-email.png" alt="">
-              <div class="h3-desktop color-gray-6">E-mail</div>
+              <h3 class=" color-gray-6">E-mail</h3>
             </div>
             <div class="body-text-16 color-gray-4">email&#64;email.com</div>
           </div>
@@ -100,14 +67,14 @@
           <div class="information-item">
             <div class="title">
               <img src="../../../assets/imgs/contact-whatsapp.png" alt="">
-              <div class="h3-desktop color-gray-6">Whatsapp</div>
+              <h3 class="color-gray-6">Whatsapp</h3>
             </div>
             <div class="body-text-16 color-gray-4">(51) 91234-5678</div>
           </div>
           <div class="information-item">
             <div class="title">
               <img src="../../../assets/imgs/contact-phone.png" alt="">
-              <div class="h3-desktop color-gray-6">Telefone</div>
+              <h3 class="color-gray-6">Telefone</h3>
             </div>
             <div class="body-text-16 color-gray-4">(51) 1234-5678</div>
           </div>

@@ -1,0 +1,22 @@
+<div class="headerContainer">
+    <div class="logo-container">
+      <img (click)="routerNav('')" [style.cursor]="'pointer'" src="../../../assets/imgs/Logo-header.png" alt="Logo da Liga Odontológica">
+      <img *ngIf="menuIsOpened" (click)="toggleMenu()" src="../../../../assets/imgs/menu_opened.svg" alt="">
+      <img *ngIf="!menuIsOpened" #menuButton id="menuButton" (click)="toggleMenu()" src="../../../../assets/imgs/menu-closed.svg" alt="">
+    </div>
+    <div *ngIf="menuIsOpened" #menu id="menu" class="pagesAndButtonContainer">
+      <div class="pages">
+        <ul class="color-gray-3">
+          <li class="menu-item" (click)="routerNav('equipe')">Equipe</li>
+          <li class="menu-item" (click)="routerNav('especialidades')">Especialidades</li>
+          <li class="menu-item" (click)="routerNav('consultorio')">Consultório</li>
+          <li class="menu-item" (click)="routerNav('contato')">Contato</li>
+        </ul>
+      </div>
+      <button (click)="handleSendWppMessage()" class="btn-primary button-text btn">
+        <div>Agendar Consulta</div>
+        <img src="../../../../assets/imgs/button-whatsapp-icon-white.png" alt="">
+      </button>
+    </div>
+  </div>
+  

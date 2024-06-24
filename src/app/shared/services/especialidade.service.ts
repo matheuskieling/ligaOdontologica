@@ -11,76 +11,75 @@ export class EspecialidadeService {
   especialidades: Especialidade[] = [
     {
       name: 'Clinica Geral',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing.',
+      description: 'Cuidados básicos e preventivos para a saúde bucal de toda a família.',
       relatedIconPath: 'assets/imgs/clicina-geral.png'
     },
     {
       name: 'Consulta de Prevenção e Profilaxia',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing.',
+      description: 'Avaliação e limpeza para prevenir doenças bucais e manter a saúde dental.',
       relatedIconPath: 'assets/imgs/profilaxia.png'
     },
     {
       name: 'Odontopediatria',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing.',
+      description: 'Cuidados dentários especializados para crianças, com foco em prevenção e tratamento.',
       relatedIconPath: 'assets/imgs/pediatria.png'
     },
     {
       name: 'Ortodontia e Ortopedia Facial',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing.',
+      description: 'Correção de alinhamento dentário e facial para um sorriso harmonioso.',
       relatedIconPath: 'assets/imgs/ortodontia.png'
     },
     {
       name: 'Alinhadores',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing.',
+      description: 'Soluções discretas e eficazes para alinhamento dentário sem aparelhos fixos.',
       relatedIconPath: 'assets/imgs/alinhadores.png'
     },
     {
       name: 'Bucomaxilofacial',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing.',
+      description: 'Cirurgias e tratamentos complexos envolvendo boca, maxilar e rosto.',
       relatedIconPath: 'assets/imgs/cirurgia.png'
     },
     {
       name: 'Implantes Dentários',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing.',
+      description: 'Substituição permanente de dentes perdidos com implantes de alta qualidade.',
       relatedIconPath: 'assets/imgs/implantes.png'
     },
     {
       name: 'Placa de Bruxismo',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing.',
+      description: 'Dispositivos para proteger os dentes contra os efeitos do bruxismo.',
       relatedIconPath: 'assets/imgs/bruxismo.png'
     },
     {
       name: 'Restaurações',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing.',
+      description: 'Reparação de dentes danificados para restaurar função e estética.',
       relatedIconPath: 'assets/imgs/restauracoes.png'
     },
     {
       name: 'Clareamento Dental',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing.',
+      description: 'Tratamentos para deixar os dentes mais brancos e brilhantes.',
       relatedIconPath: 'assets/imgs/clareamento.png'
     },
     {
-      name: 'Lentes de Contato Dentais ou Facetas',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing.',
+      name: 'Lentes de Contato Dentais',
+      description: 'Correção estética de dentes com lâminas finas e personalizadas.',
       relatedIconPath: 'assets/imgs/lentes.png'
     },
     {
       name: 'Harmonização Facial',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing.',
+      description: 'Procedimentos estéticos para melhorar a harmonia e simetria do rosto.',
       relatedIconPath: 'assets/imgs/harmonizacao.png'
     },
     {
       name: 'Periodontia',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing.',
+      description: 'Tratamento de doenças das gengivas e tecidos de suporte dos dentes.',
       relatedIconPath: 'assets/imgs/periodontia.png'
     },
     {
       name: 'Tratamento de Canal',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing.',
+      description: 'Tratamento endodôntico para salvar dentes com infecções ou danos graves.',
       relatedIconPath: 'assets/imgs/endodontia.png'
     }
   ]
-
   getEspecialidades() {
     return this.especialidades;
   }
