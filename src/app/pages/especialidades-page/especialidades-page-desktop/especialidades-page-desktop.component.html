@@ -1,0 +1,9 @@
+<section class="content">
+    <div class="content-items">
+        <div class="especialidades-row" *ngFor="let especialidadeGroup of dividedEspecialidades">
+            <app-especialidade-card [isMobile]="false" class="especialidade-card" *ngFor="let especialidade of especialidadeGroup"
+                [especialidade]="especialidade">
+            </app-especialidade-card>
+        </div>
+    </div>
+</section>

@@ -45,6 +45,8 @@ import { TeamPageDesktopComponent } from './pages/team-page/team-page-desktop/te
 import { TeamPageMobileComponent } from './pages/team-page/team-page-mobile/team-page-mobile.component';
 import { DentistaProfileDesktopComponent } from './components/shared/dentista-profile/dentista-profile-desktop/dentista-profile-desktop.component';
 import { DentistaProfileMobileComponent } from './components/shared/dentista-profile/dentista-profile-mobile/dentista-profile-mobile.component';
+import { EspecialidadesPageDesktopComponent } from './pages/especialidades-page/especialidades-page-desktop/especialidades-page-desktop.component';
+import { EspecialidadesPageMobileComponent } from './pages/especialidades-page/especialidades-page-mobile/especialidades-page-mobile.component';
 
 @NgModule({
   declarations: [
@@ -90,6 +92,8 @@ import { DentistaProfileMobileComponent } from './components/shared/dentista-pro
     TeamPageMobileComponent,
     DentistaProfileDesktopComponent,
     DentistaProfileMobileComponent,
+    EspecialidadesPageDesktopComponent,
+    EspecialidadesPageMobileComponent,
   ],
   imports: [
     BrowserModule,

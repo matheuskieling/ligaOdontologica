@@ -1,0 +1,11 @@
+<section class="content">
+  <div class="content-items">
+    <app-especialidade-card
+      [isMobile]="true"
+      class="especialidade-card"
+      *ngFor="let especialidade of especialidades"
+      [especialidade]="especialidade"
+    >
+    </app-especialidade-card>
+  </div>
+</section>

@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { EspecialidadesComponent } from './especialidades-page.component';
+import { EspecialidadesPageComponent } from './especialidades-page.component';
 
-describe('EspecialidadesComponent', () => {
-  let component: EspecialidadesComponent;
-  let fixture: ComponentFixture<EspecialidadesComponent>;
+describe('EspecialidadesPageComponent', () => {
+  let component: EspecialidadesPageComponent;
+  let fixture: ComponentFixture<EspecialidadesPageComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [EspecialidadesComponent]
+      declarations: [EspecialidadesPageComponent]
     });
-    fixture = TestBed.createComponent(EspecialidadesComponent);
+    fixture = TestBed.createComponent(EspecialidadesPageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

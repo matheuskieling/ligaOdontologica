@@ -1,0 +1,11 @@
+.content {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    .content-items {
+        display: flex;
+        margin: 80px 16px 120px 16px;
+        flex-direction: column;
+        gap: 24px;
+    }
+}
