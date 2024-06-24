@@ -8,6 +8,7 @@
       <div class="especialidades-and-arrows">
         <div class="especialidades-cards">
           <app-especialidade-card
+            [isMobile]="true"
             *ngFor="let especialidade of visibleEspecialidades"
             [especialidade]="especialidade"
             [width]="282"

@@ -16,14 +16,13 @@
             margin: 0 auto;
             app-especialidade-card {
                 width: 234px;
-                height: 250px;
+                height: 100%;
                 animation: fadeIn 1s;
             }
         }
 
         .btn {
             align-self: center;
-            margin-top: 66px;
         }
     }
 }

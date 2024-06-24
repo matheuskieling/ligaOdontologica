@@ -7,6 +7,7 @@ import { Especialidade } from 'src/app/shared/interfaces/especialidade-interface
   styleUrls: ['./especialidade-card.component.scss']
 })
 export class EspecialidadeCardComponent {
+  @Input() isMobile!: boolean;
   @Input() width!: number;
   @Input() height!: number;
   @Input() especialidade!: Especialidade;

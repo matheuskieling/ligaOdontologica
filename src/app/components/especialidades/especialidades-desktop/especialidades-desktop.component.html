@@ -20,6 +20,7 @@
     </div>
     <div class="especialidades-cards">
       <app-especialidade-card
+        [isMobile]="false"
         *ngFor="let especialidade of visibleEspecialidades"
         [especialidade]="especialidade"
         [width]="282"

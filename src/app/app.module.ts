@@ -33,6 +33,10 @@ import { ConsultorioMobileComponent } from './components/consultorio/consultorio
 import { ContatosComponent } from './components/contatos/contatos.component';
 import { ContatosDesktopComponent } from './components/contatos/contatos-desktop/contatos-desktop.component';
 import { ContatosMobileComponent } from './components/contatos/contatos-mobile/contatos-mobile.component';
+import { FooterDesktopComponent } from './components/footer/footer-desktop/footer-desktop.component';
+import { FooterMobileComponent } from './components/footer/footer-mobile/footer-mobile.component';
+import { EspecialidadeCardDesktopComponent } from './components/shared/especialidade-card/especialidade-card-desktop/especialidade-card-desktop.component';
+import { EspecialidadeCardMobileComponent } from './components/shared/especialidade-card/especialidade-card-mobile/especialidade-card-mobile.component';
 
 @NgModule({
   declarations: [
@@ -66,6 +70,10 @@ import { ContatosMobileComponent } from './components/contatos/contatos-mobile/c
     ContatosComponent,
     ContatosDesktopComponent,
     ContatosMobileComponent,
+    FooterDesktopComponent,
+    FooterMobileComponent,
+    EspecialidadeCardDesktopComponent,
+    EspecialidadeCardMobileComponent,
   ],
   imports: [
     BrowserModule,
