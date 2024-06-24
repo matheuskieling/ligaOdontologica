@@ -1,2 +1,7 @@
 <app-header [isMobile]="isMobile"></app-header>
-<app-footer></app-footer>
+<app-whats-app-floating-button id="whats" [isMobile]="isMobile" (toggleOpenEvent)="handleToggleOpen()" [isOpened]="isWhatsOpened" id="whats"></app-whats-app-floating-button>
+
+<app-page-title [isMobile]="isMobile" [pageTitle]="'Entre em contato conosco'" [color]="'green'"></app-page-title>
+<app-contact-page-desktop *ngIf="!isMobile"></app-contact-page-desktop>
+<app-contact-page-mobile *ngIf="isMobile"></app-contact-page-mobile>
+<app-footer [isMobile]="isMobile"></app-footer>

@@ -1,0 +1,48 @@
+.contatos {
+    width: 100%;
+    height: fit-content;
+    background-color: white;
+    .content {
+        margin-bottom: 80px;
+        padding: 80px 16px 0 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+        .img {
+            width: 781px;
+            height: 523px;
+            background-color: var(--placeholder);
+        }
+
+        .content-description {
+            display: flex;
+            flex-direction: column;
+            gap: 56px;
+            .information-container {
+                display: flex;
+                gap: 48px;
+                .information-column {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 24px;
+                    .information-item {
+                        margin: 0;
+                        padding: 0;
+                        width: 220px;
+                        height: 100px;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 12px;
+                        align-items: flex-start;
+                        .title {
+                            display: flex;
+                            gap: 12px;
+                            align-items: center;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}

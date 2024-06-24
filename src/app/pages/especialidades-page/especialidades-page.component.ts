@@ -14,7 +14,14 @@ export class EspecialidadesPageComponent {
 
   constructor(
     private responsiveService: ResponsiveService
-  ){}
+  ) {
+    window.addEventListener('click', (e: any) => {  
+      if (!document.getElementById('whats')!.contains(e.target)){
+        this.isWhatsOpened = false;
+      }
+    });
+  }
+
   ngOnInit() {
     this.responsiveService.screenType$.subscribe(screenType => {
       this.isMobile = screenType == 'mobile'

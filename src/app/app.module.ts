@@ -47,6 +47,10 @@ import { DentistaProfileDesktopComponent } from './components/shared/dentista-pr
 import { DentistaProfileMobileComponent } from './components/shared/dentista-profile/dentista-profile-mobile/dentista-profile-mobile.component';
 import { EspecialidadesPageDesktopComponent } from './pages/especialidades-page/especialidades-page-desktop/especialidades-page-desktop.component';
 import { EspecialidadesPageMobileComponent } from './pages/especialidades-page/especialidades-page-mobile/especialidades-page-mobile.component';
+import { ContactPageDesktopComponent } from './pages/contact-page/contact-page-desktop/contact-page-desktop.component';
+import { ContactPageMobileComponent } from './pages/contact-page/contact-page-mobile/contact-page-mobile.component';
+import { WhatsAppFloatingButtonDesktopComponent } from './components/shared/whats-app-floating-button/whats-app-floating-button-desktop/whats-app-floating-button-desktop.component';
+import { WhatsAppFloatingButtonMobileComponent } from './components/shared/whats-app-floating-button/whats-app-floating-button-mobile/whats-app-floating-button-mobile.component';
 
 @NgModule({
   declarations: [
@@ -94,6 +98,10 @@ import { EspecialidadesPageMobileComponent } from './pages/especialidades-page/e
     DentistaProfileMobileComponent,
     EspecialidadesPageDesktopComponent,
     EspecialidadesPageMobileComponent,
+    ContactPageDesktopComponent,
+    ContactPageMobileComponent,
+    WhatsAppFloatingButtonDesktopComponent,
+    WhatsAppFloatingButtonMobileComponent,
   ],
   imports: [
     BrowserModule,

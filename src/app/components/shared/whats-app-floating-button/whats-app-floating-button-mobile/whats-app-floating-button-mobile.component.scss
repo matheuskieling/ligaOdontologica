@@ -1,0 +1,75 @@
+.dialog-container {
+    z-index: 1000;
+    position: fixed;
+    bottom: 509px;
+    display: flex;
+    flex-direction: column;
+    width: 364px;
+    height: 194px;
+    .dialog-header {
+        border-radius: 8px 8px 0 0;
+        background-color: var(--dark-green);
+        display: flex;
+        flex-direction: column;
+        padding: 16px;
+        gap: 32px;
+        position: relative;
+
+        .mat-divider {
+            border-color: rgba(255,255,255, 0.3);
+            margin-bottom: -10px;
+            margin-top: -10px;
+            margin-left: -24px;
+            margin-right: -24px;
+        }
+    }
+
+    .dialog-body {
+        background-color: white;
+        border-radius: 0 0 8px 8px;
+        display: flex;
+        flex-direction: column;
+        .dialog-body-item {
+            display: flex;
+            padding: 16px 16px;
+            align-items: center;
+            cursor: pointer;
+            gap: 16px;
+            .dialog-image-container {
+                width: 48px;
+                height: 48px;
+                border-radius: 50%;
+                background-color: #D4D4D4;
+            }
+        }
+    }
+    .arrow-down {
+        position: fixed;
+        bottom: 154px;
+        right: 40px;
+        width: 0;
+        height: 0;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-top: 20px solid white;
+    }
+}
+
+
+.whats-app-floating-button-container {
+    z-index: 1000;
+    cursor: pointer;
+    position: fixed;
+	bottom: 80px;
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--light-green);
+}
+
+.dialog-body-item:hover {
+    background-color: var(--gray-1);
+}
