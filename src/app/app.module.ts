@@ -24,6 +24,9 @@ import { HeroMobileComponent } from './components/hero/hero-mobile/hero-mobile.c
 import { EspecialidadesDesktopComponent } from './components/especialidades/especialidades-desktop/especialidades-desktop.component';
 import { EspecialidadesMobileComponent } from './components/especialidades/especialidades-mobile/especialidades-mobile.component';
 import { EspecialidadesComponent } from './components/especialidades/especialidades.component';
+import { EquipeComponent } from './components/equipe/equipe.component';
+import { EquipeDesktopComponent } from './components/equipe/equipe-desktop/equipe-desktop.component';
+import { EquipeMobileComponent } from './components/equipe/equipe-mobile/equipe-mobile.component';
 
 @NgModule({
   declarations: [
@@ -48,6 +51,9 @@ import { EspecialidadesComponent } from './components/especialidades/especialida
     EspecialidadesComponent,
     EspecialidadesDesktopComponent,
     EspecialidadesMobileComponent,
+    EquipeComponent,
+    EquipeDesktopComponent,
+    EquipeMobileComponent,
   ],
   imports: [
     BrowserModule,

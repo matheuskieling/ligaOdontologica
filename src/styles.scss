@@ -319,7 +319,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 img {
 	border-radius: 16px;
 	animation: fadeIn 1s;
-
+	object-fit: cover;
 }
 
 @keyframes fadeIn {
