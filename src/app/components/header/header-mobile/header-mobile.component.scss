@@ -21,7 +21,7 @@
         width: calc(100% - 24px);
         background-color: white;
         z-index: 100;
-        box-shadow: 0px 30px 20px 0px rgba(0, 0, 0, 0.08);
+        box-shadow: 0px 30px 20px 0px rgba(0, 0, 0, 0.08), 0px -35px 0 0px rgb(255, 255, 255);
         gap: 57px;
         flex-direction: column;
         .pages > ul {
@@ -51,4 +51,9 @@
         background: rgba(0, 0, 0, 0); // Invisible, but you can change the color for a visible backdrop
         z-index: 50; // Ensure it's above other content but below the menu
       }
+
+}
+
+.menu {
+    object-fit: none !important;
 }

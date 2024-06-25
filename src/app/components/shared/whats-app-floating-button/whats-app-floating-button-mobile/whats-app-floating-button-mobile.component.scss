@@ -1,11 +1,13 @@
 .dialog-container {
     z-index: 1000;
     position: fixed;
-    bottom: 509px;
+    bottom: 179px;
     display: flex;
     flex-direction: column;
     width: 364px;
-    height: 194px;
+    height: fit-content;
+    box-shadow: 0px 4px 10px 0 rgba(0,0,0,0.16);
+
     .dialog-header {
         border-radius: 8px 8px 0 0;
         background-color: var(--dark-green);
@@ -45,13 +47,14 @@
     }
     .arrow-down {
         position: fixed;
-        bottom: 154px;
-        right: 40px;
-        width: 0;
-        height: 0;
-        border-left: 20px solid transparent;
-        border-right: 20px solid transparent;
-        border-top: 20px solid white;
+        bottom: 165px;
+        right: 42px;
+        width: 32px;
+        height: 32px;
+        transform: rotate(45deg);
+        background-color: white;
+        z-index: -1;
+        box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.16);
     }
 }
 

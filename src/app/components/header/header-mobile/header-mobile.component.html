@@ -1,8 +1,8 @@
 <div class="headerContainer">
     <div class="logo-container">
       <img (click)="routerNav('')" [style.cursor]="'pointer'" src="../../../assets/imgs/Logo-header.png" alt="Logo da Liga Odontológica">
-      <img *ngIf="menuIsOpened" (click)="toggleMenu()" src="../../../../assets/imgs/menu_opened.svg" alt="">
-      <img *ngIf="!menuIsOpened" #menuButton id="menuButton" (click)="toggleMenu()" src="../../../../assets/imgs/menu-closed.svg" alt="">
+      <img class="menu" *ngIf="menuIsOpened" (click)="toggleMenu()" src="../../../../assets/imgs/menu_opened.svg" alt="">
+      <img class="menu" *ngIf="!menuIsOpened" #menuButton id="menuButton" (click)="toggleMenu()" src="../../../../assets/imgs/menu-closed.svg" alt="">
     </div>
     <div *ngIf="menuIsOpened" #menu id="menu" class="pagesAndButtonContainer">
       <div class="pages">
