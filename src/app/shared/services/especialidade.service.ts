@@ -26,17 +26,17 @@ export class EspecialidadeService {
     },
     {
       name: 'Ortodontia e Ortopedia Facial',
-      description: 'Correção de alinhamento dentário e facial para um sorriso harmonioso.',
+      description: 'Correção da posição dos dentes e dos ossos maxilares melhorando a estética, função e oclusão.',
       relatedIconPath: 'assets/imgs/ortodontia.png'
     },
     {
       name: 'Alinhadores',
-      description: 'Soluções discretas e eficazes para alinhamento dentário sem aparelhos fixos.',
+      description: 'Tratamento ortodôntico com aparelhos invisíveis e removíveis.',
       relatedIconPath: 'assets/imgs/alinhadores.png'
     },
     {
-      name: 'Bucomaxilofacial',
-      description: 'Cirurgias e tratamentos complexos envolvendo boca, maxilar e rosto.',
+      name: 'Cirurgia Bucomaxilofacial',
+      description: 'Cirurgias de extrações dentárias e tratamentos complexos.',
       relatedIconPath: 'assets/imgs/cirurgia.png'
     },
     {
