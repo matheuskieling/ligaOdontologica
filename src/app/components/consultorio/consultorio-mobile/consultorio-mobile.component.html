@@ -5,7 +5,9 @@
       <h2 class="color-gray-6">Consultório</h2>
     </div>
     <div class="carousel-and-arrows-container">
-      <div class="carousel">
+      <div class="carousel"  (touchstart)="onTouchStart($event)" 
+      (touchmove)="onTouchMove($event)" 
+      (touchend)="onTouchEnd()">
         <ng-container *ngFor="let foto of visibleFotosConsultorio; let i = index">
           <img [src]="foto.src" [alt]="foto.alt" class="consultorio-image">
         </ng-container>

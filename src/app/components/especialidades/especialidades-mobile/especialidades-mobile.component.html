@@ -6,7 +6,9 @@
     </div>
     <div class="especialidades-and-arrows-and-btn">
       <div class="especialidades-and-arrows">
-        <div class="especialidades-cards">
+        <div class="especialidades-cards"  (touchstart)="onTouchStart($event)" 
+        (touchmove)="onTouchMove($event)" 
+        (touchend)="onTouchEnd()">
           <app-especialidade-card
             [isMobile]="true"
             *ngFor="let especialidade of visibleEspecialidades"

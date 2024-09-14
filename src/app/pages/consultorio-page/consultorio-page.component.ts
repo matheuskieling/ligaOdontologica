@@ -14,6 +14,7 @@ export class ConsultorioPageComponent {
   fotosConsultorio: FotoConsultorio[] = [];
   visibleFotosConsultorio: FotoConsultorio[] = [];
   consultorioStartIndex: number = 0;
+
   constructor(
     private imageService: ImageService,
     private responsiveService: ResponsiveService
@@ -75,4 +76,6 @@ export class ConsultorioPageComponent {
     }
     return '';
   }
+
+
 }

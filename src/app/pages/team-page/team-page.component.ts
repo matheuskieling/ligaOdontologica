@@ -16,7 +16,7 @@ export class TeamPageComponent {
     {
       name: "Manuela Gomes",
       cro: "CRORS 27099",
-      imgSrc: "../../../assets/imgs/consultorio/Rectangle-12.png",
+      imgSrc: "../../../assets/imgs/equipe/manuela_equipe.jpg",
       color: "green",
       descricaoListItems: [
         "Sócia proprietária Liga Odontológica Integrada.",
@@ -28,7 +28,7 @@ export class TeamPageComponent {
     {
       name: "Mariana Kieling",
       cro: "CRORS 26215",
-      imgSrc: "../../../assets/imgs/consultorio/Rectangle-13.png",
+      imgSrc: "../../../assets/imgs/equipe/mari_equipe.jpg",
       color: "yellow",
       descricaoListItems: [
         "Sócia proprietária Liga Odontológica Integrada.",
@@ -43,7 +43,7 @@ export class TeamPageComponent {
     {
       name: "Bianca Munari",
       cro: "CRORS 17216",
-      imgSrc: "../../../assets/imgs/consultorio/Rectangle-14.png",
+      imgSrc: "../../../assets/imgs/equipe/bianca_equipe.jpg",
       color: "pink",
       descricaoListItems: [
         "Graduada em Odontologia - Universidade Luterana do Brasil (ULBRA)",
@@ -54,7 +54,7 @@ export class TeamPageComponent {
     {
       name: "Isadora Pignataro",
       cro: "CRORS 30112",
-      imgSrc: "../../../assets/imgs/consultorio/Rectangle-15.png",
+      imgSrc: "../../../assets/imgs/equipe/isadora_equipe.jpg",
       color: "blue",
       descricaoListItems: [
         "Graduada em Odontologia - Universidade Federal do Rio Grande do Sul (UFRGS)",

@@ -12,6 +12,9 @@ export class ConsultorioMobileComponent {
   visibleFotosConsultorio: FotoConsultorio[] = [];
   consultorioStartIndex: number = 0;
 
+  private touchStartX: number = 0;
+  private touchEndX: number = 0;
+
   constructor(
     private imageService: ImageService
   ) {}
@@ -45,5 +48,23 @@ export class ConsultorioMobileComponent {
     this.consultorioStartIndex =
       (this.consultorioStartIndex - 1 + this.fotosConsultorio.length) % this.fotosConsultorio.length;
     this.updateVisibleFotosConsultorio();
+  }
+
+  onTouchStart(event: TouchEvent) {
+    this.touchStartX = event.changedTouches[0].screenX;
+  }
+
+  onTouchMove(event: TouchEvent) {
+    this.touchEndX = event.changedTouches[0].screenX;
+  }
+
+  onTouchEnd() {
+    if (Math.abs(this.touchEndX - this.touchStartX) < 100) return
+    if (this.touchEndX < this.touchStartX) {
+      this.nextConsultorio(); // Swipe left, move to next
+    }
+    if (this.touchEndX > this.touchStartX) {
+      this.previousConsultorio(); // Swipe right, move to previous
+    }
   }
 }
